@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Timer</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="setters">
+            <div class="minutesSet">
+                <button data-setter="minutes-plus">+</button>
+                <button data-setter="minutes-minus">-</button>
+            </div>
+            <div class="secondsSet">
+                <button data-setter="seconds-plus">+</button>
+                <button data-setter="seconds-minus">-</button>
+            </div>
+        </div>
+        <div class="circle">
+            <svg width="300" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(110, 110)">
+        <circle r="100" class="base"/>
+            <g transform="rotate(-90)">
+                <circle r="100" class="progress"/>
+            <g id="pointer">
+        <circle cx="100" cy="0" r="8" class="pointer"/>
+            </g>
+            </g>
+            </g>
+            </svg>
+        </div>
+        <div class="control"> 
+            <div class="display-time">00:30</div>
+            <button class="play" id="pause"></button>
+        </div>
+    </div>
+        
+            <script src=script.js></script>
+</body>
+</html>
